@@ -6,14 +6,14 @@ We use the [WikiText dataset](https://einstein.ai/research/the-wikitext-long-ter
 
 To extract documents from WikiText and save as json file, run:
 ```bash
-cd data
-./parse-docs.py wikitext-2-raw/wiki.train.tokens wikitext-2-raw.docs.json
+mkdir data
+./parse-docs.py wikitext-2-raw/wiki.train.tokens data/wikitext-2-raw.docs.json
 ```
 
 ## Usage
 In the project terminal, run
 ```bash
-./main.py --data wikitext-2-raw.docs.json --lower --num-words 1000 --dim 10
+./main.py --data data/wikitext-2-raw.docs.json --lower --num-words 1000 --dim 10
 ```
 for a small test.
 
