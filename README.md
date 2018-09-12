@@ -2,7 +2,9 @@
 
 
 ## Setup
-We use wikitext. Then, to extract documents from wikitext and save as json file, run:
+We use the [WikiText dataset](https://einstein.ai/research/the-wikitext-long-term-dependency-language-modeling-dataset).
+
+To extract documents from WikiText and save as json file, run:
 ```bash
 cd data
 ./parse-docs.py wikitext-2-raw/wiki.train.tokens wikitext-2-raw.docs.json

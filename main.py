@@ -66,8 +66,8 @@ def main(args):
     counts = vocab.most_common(args.num_words)
     vocab = [word for word, _ in counts]
 
-    print(f'Num titles: {len(titles):,}')
-    print(f'Vocab size: {len(vocab):,}')
+    print(f'Num documents: {len(titles):,}')
+    print(f'Num words: {len(vocab):,}')
 
     total = sum(count for _, count in counts)
     unigrams = dict((word, count/total) for word, count in counts)
