@@ -1,12 +1,13 @@
 #!/usr/bin/env python
+import argparse
 import os
-import sys
 import json
 import csv
 from tqdm import tqdm
+from collections import defaultdict
 
 
-COL = {
+COLLUMNS = {
     'id':      0,
     'play':    1,
     'speaker': 4,
@@ -14,35 +15,32 @@ COL = {
 }
 
 
-def main(indir, outpath):
-    vocab_path = os.path.join(indir, 'vocab.txt')
+def main(args):
+    vocab_path = os.path.join(args.indir, 'vocab.txt')
     with open(vocab_path) as f:
         vocab = [line.strip() for line in f.readlines()]
 
-    play_path = os.path.join(indir, 'play_names.txt')
-    with open(play_path) as f:
-        plays = [line.strip() for line in f.readlines()]
-
-    text_path = os.path.join(indir, 'will_play_text.csv')
+    text_path = os.path.join(args.indir, 'will_play_text.csv')
     length = sum(1 for _ in open(text_path))
-    docs = {play: ' ' for play in plays}
+    docs = defaultdict(str)
     with open(text_path) as f:
         reader = csv.reader(f, delimiter=';')
         for row in tqdm(reader, total=length):
-            play = row[COL['play']]
-            line = [word.lower() for word in row[COL['text']].split() if word.lower() in vocab]
-            docs[play] += ' ' + ' '.join(line)
+            doc = row[COLLUMNS[args.doc]]
+            line = [word.lower() for word in row[COLLUMNS['text']].split() if word.lower() in vocab]
+            docs[doc] += ' ' + ' '.join(line)
 
     # Save documents as json for easy loading.
-    outpath = outpath + '.json' if not outpath.endswith('.json') else outpath
-    with open(outpath, 'w') as f:
+    args.outpath = args.outpath + '.json' if not args.outpath.endswith('.json') else args.outpath
+    with open(args.outpath, 'w') as f:
         json.dump(docs, f)
 
 
 if __name__ == '__main__':
-    if len(sys.argv) > 2:
-        indir = sys.argv[1]
-        outpath = sys.argv[2]
-        main(indir, outpath)
-    else:
-        exit('Specify paths.')
+    parser = argparse.ArgumentParser()
+    parser.add_argument('indir')
+    parser.add_argument('outpath')
+    parser.add_argument('--doc', default='play', choices=['play', 'speaker'])
+    args = parser.parse_args()
+
+    main(args)
