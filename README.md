@@ -13,6 +13,7 @@ mkdir data
 ## Usage
 In the project terminal, run
 ```bash
+mkdir vec
 ./main.py --data data/wikitext-2-raw.docs.json --outpath vec/wikitext-2-raw.vec.txt \
     --lower --num-words 1000 --dim 10
 ```
