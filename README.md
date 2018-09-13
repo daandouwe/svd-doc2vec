@@ -13,11 +13,16 @@ mkdir data
 ## Usage
 In the project terminal, run
 ```bash
-./main.py --data data/wikitext-2-raw.docs.json --lower --num-words 1000 --dim 10
+./main.py --data data/wikitext-2-raw.docs.json --outpath vec/wikitext-2-raw.vec.txt \
+    --lower --num-words 1000 --dim 10
 ```
-for a small test.
+for a quick demo. Plots are saved in the folder `plots`.
 
-Plots results are saved in folder `vec` and plots in folder `plots`.
+To rank the documents based on the vectors, use:
+```bash
+./rank.py vec/wikitext-2-raw.vec.txt > wikitext-2-raw.ranking.txt
+```
+
 
 ## Requirements
 ```
