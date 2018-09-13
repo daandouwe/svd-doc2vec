@@ -52,12 +52,13 @@ def write_vectors(vectors, titles, path, gensim=True):
 def main(args):
     print(f'Loading data from `{args.data}`...')
     docs = load_docs(args.data)
-    titles = tuple(docs.keys())[1:]
+    # Fix an error in the conversion. TODO
+    docs = {title: text for title, text in docs.items() if isinstance(text, str) and len(text) > 0}
+    titles = tuple(docs.keys())
+
 
     all_text = ''
     for title in titles:
-        if not isinstance(docs[title], str):
-            continue
         if args.lower:
             docs[title] = docs[title].lower()
         all_text += ' ' + docs[title]
@@ -67,20 +68,22 @@ def main(args):
     counts = vocab.most_common(args.num_words)
     vocab = [word for word, _ in counts]
 
-    print(f'Num documents: {len(titles):,}')
+    print(f'Num docs: {len(titles):,}')
     print(f'Num words: {len(vocab):,}')
 
+    print('Collecting unigrams...')
     total = sum(count for _, count in counts)
     unigrams = dict((word, count/total) for word, count in counts)
 
+    w2i = dict((word, i) for i, word in enumerate(unigrams.keys()))
+
+    print('Collecting bigrams...')
     bigrams = dict()
-    for title in titles:
+    for title in tqdm(titles):
         text = (word for word in docs[title].split() if word in vocab)
         word_counts = Counter(text)
         total = sum(count for _, count in word_counts.items())
         bigrams[title] = dict((word, count/total) for word, count in word_counts.items())
-
-    w2i = dict((word, i) for i, word in enumerate(unigrams.keys()))
 
     print('Making PPMI matrix...')
     pxy, py = make_matrices(unigrams, bigrams, w2i)
