@@ -1,7 +1,5 @@
 import os
-from collections import Counter
 
-import numpy as np
 from sklearn.cluster import KMeans
 from sklearn.manifold import TSNE
 from bokeh.models import ColumnDataSource, LabelSet
@@ -16,7 +14,7 @@ def heatmap(mat, path):
     plt.savefig(path)
 
 
-def emb_scatter(data, names, model_name, perplexity=30.0, k=20):
+def emb_scatter(data, names, model_name, tsne=True, perplexity=30.0, k=20):
     """t-SNE plot of embeddings and coloring with K-means clustering.
 
     Uses t-SNE with given perplexity to reduce the dimension of the
@@ -29,7 +27,7 @@ def emb_scatter(data, names, model_name, perplexity=30.0, k=20):
         data (np.Array): the word embeddings shape [num_vectors, embedding_dim]
         names (list): num_vectors words same order as data
         perplexity (float): perplexity for t-SNE
-        N (int): number of clusters to find by K-means
+        k (int): number of clusters to find by K-means
     """
     # Find clusters with kmeans.
     print('Finding clusters...')
@@ -38,9 +36,12 @@ def emb_scatter(data, names, model_name, perplexity=30.0, k=20):
     klabels = kmeans.labels_
 
     # Get a tsne fit.
-    print('Fitting t-SNE...')
-    tsne = TSNE(n_components=2, perplexity=perplexity)
-    emb_tsne = tsne.fit_transform(data)
+    if tsne:
+        print('Fitting t-SNE...')
+        tsne = TSNE(n_components=2, perplexity=perplexity)
+        emb = tsne.fit_transform(data)
+    else:
+        emb = data
 
     # Plot the t-SNE of the embeddings with bokeh,
     # source: https://github.com/oxford-cs-deepnlp-2017/practical-1
@@ -52,8 +53,8 @@ def emb_scatter(data, names, model_name, perplexity=30.0, k=20):
     colormap = d3['Category20'][k]
     colors = [colormap[i] for i in klabels]
 
-    source = ColumnDataSource(data=dict(x1=emb_tsne[:,0],
-                                        x2=emb_tsne[:,1],
+    source = ColumnDataSource(data=dict(x1=emb[:,0],
+                                        x2=emb[:,1],
                                         names=names,
                                         colors=colors))
 

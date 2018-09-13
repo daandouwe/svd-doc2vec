@@ -13,26 +13,28 @@ from data import load_docs
 from plot import emb_scatter, heatmap
 
 
-def ppmi_fun(pxy, px, py=None):
-    if py is not None:
-        pmi = np.log(pxy) - np.log(px) - np.log(py)
+def ppmi(pxy, py, px=None):
+    xdim, ydim = pxy.shape
+    assert py.shape == (1, ydim)
+    if px is None:
+        pmi = np.log(pxy) - np.log(py)
     else:
-        pmi = np.log(pxy) - np.log(px)
+        assert px.shape == (xdim, 1)
+        pmi = np.log(pxy) - np.log(px) - np.log(py)
     pmi[pmi < 0] = 0
     return pmi
 
 
-def ppmi(unigrams, bigrams, w2i):
+def make_matrices(unigrams, bigrams, w2i):
     assert (len(unigrams) == len(w2i))
-    px = np.zeros((1, len(unigrams)))
+    py = np.zeros((1, len(unigrams)))
     pxy = np.zeros((len(bigrams), len(unigrams)))
     for word, i in w2i.items():
-        px[0, i] = unigrams[word]
+        py[0, i] = unigrams[word]
     for i, title in enumerate(tqdm(bigrams)):
         for word, prob in bigrams[title].items():
             pxy[i, w2i[word]] = prob
-
-    return ppmi_fun(pxy, px)
+    return pxy, py
 
 
 def write_vectors(vectors, titles, path, gensim=True):
@@ -47,8 +49,6 @@ def write_vectors(vectors, titles, path, gensim=True):
             print(line, file=f)
 
 
-
-
 def main(args):
     print(f'Loading data from `{args.data}`...')
     docs = load_docs(args.data)
@@ -56,7 +56,8 @@ def main(args):
 
     all_text = ''
     for title in titles:
-        docs[title] = str(docs[title])
+        if not isinstance(docs[title], str):
+            continue
         if args.lower:
             docs[title] = docs[title].lower()
         all_text += ' ' + docs[title]
@@ -82,12 +83,16 @@ def main(args):
     w2i = dict((word, i) for i, word in enumerate(unigrams.keys()))
 
     print('Making PPMI matrix...')
-    mat = ppmi(unigrams, bigrams, w2i)
+    pxy, py = make_matrices(unigrams, bigrams, w2i)
+    if args.ppmi:
+        mat = ppmi(pxy, py)
+    else:
+        mat = pxy
     U, s, V = svds(mat, k=args.dim)
 
     print('Saving results...')
     write_vectors(U, titles, args.outpath)
-    emb_scatter(U, titles, model_name='wikitext-2')
+    emb_scatter(U, titles, model_name='wikitext-2', tsne=args.no_tsne, perplexity=args.perplexity)
     heatmap(U, 'plots/U.pdf')
     heatmap(mat, 'plots/mat.pdf')
 
@@ -98,9 +103,12 @@ if __name__ == '__main__':
     parser.add_argument('--data', default='data/wikitext-2-raw.docs.json')
     parser.add_argument('--outpath', default='vec/doc.vec.txt')
     parser.add_argument('--lower', action='store_true')
+    parser.add_argument('--ppmi', action='store_true')
+    parser.add_argument('--no-tsne', action='store_false')
     parser.add_argument('--num-docs', type=int, default=1000)
     parser.add_argument('--num-words', type=int, default=None)
     parser.add_argument('--dim', type=int, default=100)
+    parser.add_argument('--perplexity', type=int, default=30)
 
     args = parser.parse_args()
 

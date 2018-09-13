@@ -1,0 +1,420 @@
+A Comedy of Errors
+	 Cymbeline 0.008270848542451859
+	 Henry VI Part 3 0.0024842992424964905
+	 Antony and Cleopatra 0.0023315995931625366
+	 Henry VIII 0.0020828209817409515
+	 Much Ado about nothing 0.0020726919174194336
+	 Othello 0.0019339919090270996
+	 Taming of the Shrew 0.001842208206653595
+	 Merchant of Venice 0.001403357833623886
+	 Measure for measure 0.0012908242642879486
+	 Timon of Athens 0.0010801292955875397
+
+A Midsummer nights dream
+	 Cymbeline 0.0675559863448143
+	 Henry VI Part 3 0.020291730761528015
+	 Antony and Cleopatra 0.019044384360313416
+	 Henry VIII 0.01701253652572632
+	 Much Ado about nothing 0.01692962273955345
+	 Othello 0.01579684019088745
+	 Taming of the Shrew 0.015047162771224976
+	 Merchant of Venice 0.011462636291980743
+	 Measure for measure 0.010543450713157654
+	 Timon of Athens 0.008822530508041382
+
+A Winters Tale
+	 Cymbeline 0.27961650490760803
+	 Henry VI Part 3 0.08398817479610443
+	 Antony and Cleopatra 0.0788254588842392
+	 Henry VIII 0.07041554152965546
+	 Much Ado about nothing 0.07007227092981339
+	 Othello 0.06538365036249161
+	 Taming of the Shrew 0.062280602753162384
+	 Merchant of Venice 0.04744430631399155
+	 Measure for measure 0.043639663606882095
+	 Timon of Athens 0.0365167111158371
+
+Alls well that ends well
+	 Cymbeline 0.30003082752227783
+	 Henry VI Part 3 0.09011997282505035
+	 Antony and Cleopatra 0.08458035439252853
+	 Henry VIII 0.07555647939443588
+	 Much Ado about nothing 0.07518814504146576
+	 Othello 0.07015722990036011
+	 Taming of the Shrew 0.06682761013507843
+	 Merchant of Venice 0.05090811848640442
+	 Measure for measure 0.04682570695877075
+	 Timon of Athens 0.03918274864554405
+
+Antony and Cleopatra
+	 Alls well that ends well 0.08458036184310913
+	 A Winters Tale 0.0788254588842392
+	 Henry VI Part 2 0.0629708468914032
+	 A Midsummer nights dream 0.01904439926147461
+	 Pericles 0.018833991140127182
+	 Romeo and Juliet 0.014194384217262268
+	 As you like it 0.011614389717578888
+	 Two Gentlemen of Verona 0.011269290000200272
+	 Julius Caesar 0.011029722169041634
+	 Titus Andronicus 0.009163975715637207
+
+As you like it
+	 Cymbeline 0.04119952395558357
+	 Henry VI Part 3 0.01237507164478302
+	 Antony and Cleopatra 0.011614389717578888
+	 Henry VIII 0.010375231504440308
+	 Much Ado about nothing 0.010324623435735703
+	 Othello 0.009633824229240417
+	 Taming of the Shrew 0.009176615625619888
+	 Merchant of Venice 0.00699060782790184
+	 Measure for measure 0.006429985165596008
+	 Timon of Athens 0.005380481481552124
+
+Coriolanus
+	 Cymbeline 0.02143390104174614
+	 Henry VI Part 3 0.006438076496124268
+	 Antony and Cleopatra 0.006042346358299255
+	 Henry VIII 0.005397673696279526
+	 Much Ado about nothing 0.005371361970901489
+	 Othello 0.005011938512325287
+	 Taming of the Shrew 0.004774078726768494
+	 Merchant of Venice 0.0036368072032928467
+	 Measure for measure 0.003345182165503502
+	 Timon of Athens 0.0027991849929094315
+
+Cymbeline
+	 Alls well that ends well 0.3000308573246002
+	 A Winters Tale 0.27961650490760803
+	 Henry VI Part 2 0.22337569296360016
+	 A Midsummer nights dream 0.0675559788942337
+	 Pericles 0.06680960208177567
+	 Romeo and Juliet 0.05035156384110451
+	 As you like it 0.04119952395558357
+	 Two Gentlemen of Verona 0.03997538611292839
+	 Julius Caesar 0.03912564739584923
+	 Titus Andronicus 0.0325072705745697
+
+Hamlet
+	 Cymbeline 0.020792387425899506
+	 Henry VI Part 3 0.00624539889395237
+	 Antony and Cleopatra 0.005861472338438034
+	 Henry VIII 0.005236148834228516
+	 Much Ado about nothing 0.00521061010658741
+	 Othello 0.00486195832490921
+	 Taming of the Shrew 0.004631206393241882
+	 Merchant of Venice 0.0035279840230941772
+	 Measure for measure 0.003245066851377487
+	 Timon of Athens 0.0027154022827744484
+
+Henry V
+	 Alls well that ends well 0.028352785855531693
+	 A Winters Tale 0.026423651725053787
+	 Henry VI Part 2 0.02110891044139862
+	 A Midsummer nights dream 0.006384029984474182
+	 Pericles 0.0063134729862213135
+	 Romeo and Juliet 0.004758201539516449
+	 As you like it 0.0038933604955673218
+	 Two Gentlemen of Verona 0.003777638077735901
+	 Julius Caesar 0.003697335720062256
+	 Titus Andronicus 0.0030719339847564697
+
+Henry VIII
+	 Alls well that ends well 0.07555646449327469
+	 A Winters Tale 0.07041554152965546
+	 Henry VI Part 2 0.05625246465206146
+	 A Midsummer nights dream 0.01701253652572632
+	 Pericles 0.01682460308074951
+	 Romeo and Juliet 0.01267997920513153
+	 As you like it 0.010375231504440308
+	 Two Gentlemen of Verona 0.010066956281661987
+	 Julius Caesar 0.009852953255176544
+	 Titus Andronicus 0.008186280727386475
+
+Henry VI Part 1
+	 Alls well that ends well 0.009211722761392593
+	 A Winters Tale 0.008584946393966675
+	 Henry VI Part 2 0.006858229637145996
+	 A Midsummer nights dream 0.00207415409386158
+	 Pericles 0.002051226794719696
+	 Romeo and Juliet 0.001545920968055725
+	 As you like it 0.001264922320842743
+	 Two Gentlemen of Verona 0.0012273378670215607
+	 Julius Caesar 0.0012012645602226257
+	 Titus Andronicus 0.0009980648756027222
+
+Henry VI Part 2
+	 Cymbeline 0.22337569296360016
+	 Henry VI Part 3 0.06709513068199158
+	 Antony and Cleopatra 0.0629708468914032
+	 Henry VIII 0.05625246465206146
+	 Much Ado about nothing 0.05597827956080437
+	 Othello 0.05223266780376434
+	 Taming of the Shrew 0.049753762781620026
+	 Merchant of Venice 0.03790156543254852
+	 Measure for measure 0.03486214205622673
+	 Timon of Athens 0.029171910136938095
+
+Henry VI Part 3
+	 Alls well that ends well 0.09011998772621155
+	 A Winters Tale 0.08398817479610443
+	 Henry VI Part 2 0.06709513068199158
+	 A Midsummer nights dream 0.02029174193739891
+	 Pericles 0.02006753534078598
+	 Romeo and Juliet 0.015124045312404633
+	 As you like it 0.01237507164478302
+	 Two Gentlemen of Verona 0.012007363140583038
+	 Julius Caesar 0.011752121150493622
+	 Titus Andronicus 0.009764149785041809
+
+Julius Caesar
+	 Cymbeline 0.03912564739584923
+	 Henry VI Part 3 0.011752121150493622
+	 Antony and Cleopatra 0.011029722169041634
+	 Henry VIII 0.009852953255176544
+	 Much Ado about nothing 0.009804945439100266
+	 Othello 0.009148873388767242
+	 Taming of the Shrew 0.008714675903320312
+	 Merchant of Venice 0.006638692691922188
+	 Measure for measure 0.0061063338071107864
+	 Timon of Athens 0.005109649151563644
+
+King John
+	 Cymbeline 0.009100958704948425
+	 Henry VI Part 3 0.0027336589992046356
+	 Antony and Cleopatra 0.00256560742855072
+	 Henry VIII 0.0022918693721294403
+	 Much Ado about nothing 0.002280697226524353
+	 Othello 0.002128094434738159
+	 Taming of the Shrew 0.0020271092653274536
+	 Merchant of Venice 0.0015441998839378357
+	 Measure for measure 0.001420382410287857
+	 Timon of Athens 0.0011885464191436768
+
+King Lear
+	 Alls well that ends well 0.007369868457317352
+	 A Winters Tale 0.006868429481983185
+	 Henry VI Part 2 0.005486942827701569
+	 A Midsummer nights dream 0.0016594454646110535
+	 Pericles 0.001641109585762024
+	 Romeo and Juliet 0.0012368299067020416
+	 As you like it 0.0010120123624801636
+	 Two Gentlemen of Verona 0.000981941819190979
+	 Julius Caesar 0.0009610727429389954
+	 Titus Andronicus 0.0007984861731529236
+
+Loves Labours Lost
+	 Alls well that ends well 0.009830985218286514
+	 A Winters Tale 0.009162083268165588
+	 Henry VI Part 2 0.00731925293803215
+	 A Midsummer nights dream 0.00221358984708786
+	 Pericles 0.0021891221404075623
+	 Romeo and Juliet 0.0016498491168022156
+	 As you like it 0.00134996697306633
+	 Two Gentlemen of Verona 0.0013098567724227905
+	 Julius Caesar 0.0012819953262805939
+	 Titus Andronicus 0.0010651461780071259
+
+Measure for measure
+	 Alls well that ends well 0.04682570695877075
+	 A Winters Tale 0.043639663606882095
+	 Henry VI Part 2 0.03486214205622673
+	 A Midsummer nights dream 0.010543450713157654
+	 Pericles 0.010426938533782959
+	 Romeo and Juliet 0.007858358323574066
+	 As you like it 0.006429985165596008
+	 Two Gentlemen of Verona 0.006238944828510284
+	 Julius Caesar 0.0061063338071107864
+	 Titus Andronicus 0.00507340207695961
+
+Merchant of Venice
+	 Alls well that ends well 0.050908155739307404
+	 A Winters Tale 0.04744430631399155
+	 Henry VI Part 2 0.03790156543254852
+	 A Midsummer nights dream 0.011462647467851639
+	 Pericles 0.011336013674736023
+	 Romeo and Juliet 0.0085434690117836
+	 As you like it 0.00699060782790184
+	 Two Gentlemen of Verona 0.0067828744649887085
+	 Julius Caesar 0.006638692691922188
+	 Titus Andronicus 0.005515739321708679
+
+Merry Wives of Windsor
+	 Cymbeline 0.009750887751579285
+	 Henry VI Part 3 0.0029288697987794876
+	 Antony and Cleopatra 0.0027488358318805695
+	 Henry VIII 0.0024555735290050507
+	 Much Ado about nothing 0.002443574368953705
+	 Othello 0.0022800862789154053
+	 Taming of the Shrew 0.0021718814969062805
+	 Merchant of Venice 0.0016544908285140991
+	 Measure for measure 0.0015217959880828857
+	 Timon of Athens 0.0012734122574329376
+
+Much Ado about nothing
+	 Alls well that ends well 0.07518813014030457
+	 A Winters Tale 0.07007227092981339
+	 Henry VI Part 2 0.05597827956080437
+	 A Midsummer nights dream 0.016929620876908302
+	 Pericles 0.016742583364248276
+	 Romeo and Juliet 0.012618184089660645
+	 As you like it 0.010324623435735703
+	 Two Gentlemen of Verona 0.010017894208431244
+	 Julius Caesar 0.009804945439100266
+	 Titus Andronicus 0.008146366104483604
+
+Othello
+	 Alls well that ends well 0.07015721499919891
+	 A Winters Tale 0.06538365036249161
+	 Henry VI Part 2 0.05223266780376434
+	 A Midsummer nights dream 0.015796825289726257
+	 Pericles 0.015622347593307495
+	 Romeo and Juliet 0.011773878708481789
+	 As you like it 0.009633824229240417
+	 Two Gentlemen of Verona 0.00934755802154541
+	 Julius Caesar 0.009148873388767242
+	 Titus Andronicus 0.007601279765367508
+
+Pericles
+	 Cymbeline 0.06680960208177567
+	 Henry VI Part 3 0.02006753534078598
+	 Antony and Cleopatra 0.018833991140127182
+	 Henry VIII 0.01682460308074951
+	 Much Ado about nothing 0.016742583364248276
+	 Othello 0.015622347593307495
+	 Taming of the Shrew 0.01488090306520462
+	 Merchant of Venice 0.011336013674736023
+	 Measure for measure 0.010426938533782959
+	 Timon of Athens 0.008725050836801529
+
+Richard II
+	 Alls well that ends well 0.031975969672203064
+	 A Winters Tale 0.029800254851579666
+	 Henry VI Part 2 0.023806415498256683
+	 A Midsummer nights dream 0.007199795916676521
+	 Pericles 0.0071202851831912994
+	 Romeo and Juliet 0.005366221070289612
+	 As you like it 0.0043908581137657166
+	 Two Gentlemen of Verona 0.004260390996932983
+	 Julius Caesar 0.004169829189777374
+	 Titus Andronicus 0.0034645050764083862
+
+Richard III
+	 Alls well that ends well 0.016062241047620773
+	 A Winters Tale 0.014969322830438614
+	 Henry VI Part 2 0.011958446353673935
+	 A Midsummer nights dream 0.0036166124045848846
+	 Pericles 0.003576686605811119
+	 Romeo and Juliet 0.0026956014335155487
+	 As you like it 0.0022056549787521362
+	 Two Gentlemen of Verona 0.002140078693628311
+	 Julius Caesar 0.002094581723213196
+	 Titus Andronicus 0.001740291714668274
+
+Romeo and Juliet
+	 Cymbeline 0.05035156384110451
+	 Henry VI Part 3 0.015124045312404633
+	 Antony and Cleopatra 0.014194384217262268
+	 Henry VIII 0.01267997920513153
+	 Much Ado about nothing 0.012618184089660645
+	 Othello 0.011773878708481789
+	 Taming of the Shrew 0.011215077713131905
+	 Merchant of Venice 0.0085434690117836
+	 Measure for measure 0.007858358323574066
+	 Timon of Athens 0.0065757036209106445
+
+Taming of the Shrew
+	 Alls well that ends well 0.06682761013507843
+	 A Winters Tale 0.062280602753162384
+	 Henry VI Part 2 0.049753762781620026
+	 A Midsummer nights dream 0.015047132968902588
+	 Pericles 0.01488090306520462
+	 Romeo and Juliet 0.011215077713131905
+	 As you like it 0.009176615625619888
+	 Two Gentlemen of Verona 0.008903959766030312
+	 Julius Caesar 0.008714675903320312
+	 Titus Andronicus 0.007240518927574158
+
+The Tempest
+	 Alls well that ends well 0.01895897090435028
+	 A Winters Tale 0.017669014632701874
+	 Henry VI Part 2 0.014115136116743088
+	 A Midsummer nights dream 0.004268854856491089
+	 Pericles 0.004221707582473755
+	 Romeo and Juliet 0.0031817257404327393
+	 As you like it 0.0026033949106931686
+	 Two Gentlemen of Verona 0.0025260373950004578
+	 Julius Caesar 0.0024723634123802185
+	 Titus Andronicus 0.002054154872894287
+
+Timon of Athens
+	 Alls well that ends well 0.039182744920253754
+	 A Winters Tale 0.0365167111158371
+	 Henry VI Part 2 0.029171910136938095
+	 A Midsummer nights dream 0.008822545409202576
+	 Pericles 0.008725050836801529
+	 Romeo and Juliet 0.0065757036209106445
+	 As you like it 0.005380481481552124
+	 Two Gentlemen of Verona 0.005220610648393631
+	 Julius Caesar 0.005109649151563644
+	 Titus Andronicus 0.00424531102180481
+
+Titus Andronicus
+	 Cymbeline 0.0325072705745697
+	 Henry VI Part 3 0.009764149785041809
+	 Antony and Cleopatra 0.009163975715637207
+	 Henry VIII 0.008186280727386475
+	 Much Ado about nothing 0.008146366104483604
+	 Othello 0.007601279765367508
+	 Taming of the Shrew 0.007240518927574158
+	 Merchant of Venice 0.005515739321708679
+	 Measure for measure 0.00507340207695961
+	 Timon of Athens 0.00424531102180481
+
+Troilus and Cressida
+	 Cymbeline 0.027675222605466843
+	 Henry VI Part 3 0.008312780410051346
+	 Antony and Cleopatra 0.007801804691553116
+	 Henry VIII 0.006969422101974487
+	 Much Ado about nothing 0.006935453042387962
+	 Othello 0.00647139735519886
+	 Taming of the Shrew 0.006164267659187317
+	 Merchant of Venice 0.004695821553468704
+	 Measure for measure 0.0043192654848098755
+	 Timon of Athens 0.003614269196987152
+
+Twelfth Night
+	 Alls well that ends well 0.027857400476932526
+	 A Winters Tale 0.025961965322494507
+	 Henry VI Part 2 0.0207400843501091
+	 A Midsummer nights dream 0.006272453814744949
+	 Pericles 0.006203170865774155
+	 Romeo and Juliet 0.00467507541179657
+	 As you like it 0.003825318068265915
+	 Two Gentlemen of Verona 0.0037116631865501404
+	 Julius Caesar 0.003632776439189911
+	 Titus Andronicus 0.0030182600021362305
+
+Two Gentlemen of Verona
+	 Cymbeline 0.0399753600358963
+	 Henry VI Part 3 0.012007378041744232
+	 Antony and Cleopatra 0.011269290000200272
+	 Henry VIII 0.010066971182823181
+	 Much Ado about nothing 0.010017871856689453
+	 Othello 0.009347569197416306
+	 Taming of the Shrew 0.008903954178094864
+	 Merchant of Venice 0.006782881915569305
+	 Measure for measure 0.006238941103219986
+	 Timon of Athens 0.005220619961619377
+
+macbeth
+	 Cymbeline 0.0071237459778785706
+	 Henry VI Part 3 0.002139732241630554
+	 Antony and Cleopatra 0.0020082294940948486
+	 Henry VIII 0.0017939768731594086
+	 Much Ado about nothing 0.00178522989153862
+	 Othello 0.0016657710075378418
+	 Taming of the Shrew 0.0015867091715335846
+	 Merchant of Venice 0.0012087225914001465
+	 Measure for measure 0.0011118464171886444
+	 Timon of Athens 0.000930342823266983
+

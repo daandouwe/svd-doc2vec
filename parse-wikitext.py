@@ -26,10 +26,10 @@ def main(inpath, outpath):
             # Otherwise we are still in the same document.
             else:
                 docs[topic].append(line)
-        # Save documents as json for easy loading.
-        outpath = outpath + '.json' if not outpath.endswith('.json') else outpath
-        with open(outpath, 'w') as f:
-            json.dump(docs, f)
+    # Save documents as json for easy loading.
+    outpath = outpath + '.json' if not outpath.endswith('.json') else outpath
+    with open(outpath, 'w') as f:
+        json.dump(docs, f)
 
 
 if __name__ == '__main__':
@@ -38,4 +38,4 @@ if __name__ == '__main__':
         outpath = sys.argv[2]
         main(inpath, outpath)
     else:
-        exit('Specify path')
+        exit('Specify paths.')
