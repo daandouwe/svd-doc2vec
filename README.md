@@ -1,5 +1,5 @@
 # Doc2vec with PPMI-SVD
-
+Factor a document-word cooccurence-matrix that is scaled with positive pointwise mutual information (PPMI) using singular value decomposition (SVD).
 
 ## Setup
 We use the [WikiText dataset](https://einstein.ai/research/the-wikitext-long-term-dependency-language-modeling-dataset).
